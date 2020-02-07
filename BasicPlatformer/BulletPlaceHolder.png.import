@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/PlayerPlaceholderSprite.png-eb3ffe4efee0154f75fba69387c3903b.stex"
+path="res://.import/BulletPlaceHolder.png-afd9099a7441934130cd81076b8741b2.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://PlayerPlaceholderSprite.png"
-dest_files=[ "res://.import/PlayerPlaceholderSprite.png-eb3ffe4efee0154f75fba69387c3903b.stex" ]
+source_file="res://BulletPlaceHolder.png"
+dest_files=[ "res://.import/BulletPlaceHolder.png-afd9099a7441934130cd81076b8741b2.stex" ]
 
 [params]
 
