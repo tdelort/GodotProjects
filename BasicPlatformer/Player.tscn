@@ -19,7 +19,6 @@ shape = SubResource( 1 )
 wait_time = 0.3
 one_shot = true
 
-[node name="Tween" type="Tween" parent="."]
-
 [node name="AttackTimer" type="Timer" parent="."]
+wait_time = 0.2
 one_shot = true
