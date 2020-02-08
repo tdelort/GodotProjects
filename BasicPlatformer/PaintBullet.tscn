@@ -1,11 +1,23 @@
-[gd_scene load_steps=3 format=2]
+[gd_scene load_steps=4 format=2]
 
 [ext_resource path="res://BulletPlaceHolder.png" type="Texture" id=1]
 [ext_resource path="res://PaintBullet.gd" type="Script" id=2]
 
-[node name="PaintBullet" type="Sprite"]
-texture = ExtResource( 1 )
+[sub_resource type="CapsuleShape2D" id=1]
+radius = 0.934764
+height = 1.47553
+
+[node name="PaintBullet" type="RigidBody2D"]
+gravity_scale = 0.0
 script = ExtResource( 2 )
 
+[node name="PaintBulletSprite" type="Sprite" parent="."]
+scale = Vector2( 0.2, 0.2 )
+texture = ExtResource( 1 )
+
 [node name="LifeSpanTimer" type="Timer" parent="."]
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+rotation = 1.5708
+shape = SubResource( 1 )
 [connection signal="timeout" from="LifeSpanTimer" to="." method="_on_LifeSpanTimer_timeout"]

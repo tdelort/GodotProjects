@@ -1,0 +1,37 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://BackGround.gd" type="Script" id=1]
+[ext_resource path="res://PaintSpawn.gd" type="Script" id=2]
+[ext_resource path="res://PaintBullet.tscn" type="PackedScene" id=3]
+[ext_resource path="res://PaintSplash.tscn" type="PackedScene" id=4]
+
+[node name="BackGround" type="ColorRect"]
+anchor_right = 1.0
+anchor_bottom = 1.0
+script = ExtResource( 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+Splash = ExtResource( 4 )
+
+[node name="PaintSpawn" type="Node2D" parent="."]
+position = Vector2( 297.711, 167.601 )
+script = ExtResource( 2 )
+__meta__ = {
+"_edit_group_": true
+}
+PaintBullet = ExtResource( 3 )
+
+[node name="Gun" type="ColorRect" parent="PaintSpawn"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -4.0
+margin_top = -4.0
+margin_right = 4.0
+margin_bottom = 4.0
+color = Color( 0.296875, 0.0440674, 0.0440674, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
